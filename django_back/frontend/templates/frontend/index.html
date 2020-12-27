@@ -1,20 +1,120 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
     <title>임시페이지</title>
 </head>
-<body>
-    <div id="app"></div>
+<body class="homepage">
     {% load static %}
-    <script src="{% static "./frontend/main.js" %}"></script>
-    해당페이지는 Backend : Django+DjangoRESTframework, Frontend : React.JS로 제작되었습니다.<br>
-    제작자 : 박상인<br>
-    이메일 : tkddls8848@gmail.com
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <div id="container" style="height: 200px;">
+        <div id="app"></div>
+        <script src="{% static "./frontend/main.js" %}"></script>
+    </div>
+ 
+        <!-- Featured -->
+            <div id="featured">
+                <div class="container">
+                    <header>
+                        <h2>기업 임시페이지 입니다.</h2>
+                    </header>
+                    <img src="{% static "./frontend/notice.png" %}" height="300" width="300"></img>
+                    <p>보다 좋은 서비스를 제공하기 위해 <strong>홈페이지 리뉴얼</strong> 중에 있습니다.</p>
+                    <p>빠른 시일 내에 찾아 뵙겠습니다. 감사합니다.</p>
+                    <hr />
+
+
+
+                    <div class="row">
+                        <section class="4u">
+                            <span class="pennant"><span class="fa fa-briefcase"></span></span>
+                            <h3>사업영역1</h3>
+                            <p>이런 저런 사업</p>
+                            <a href="#" class="button button-style1">Read More</a>
+                        </section>
+                        <section class="4u">
+                            <span class="pennant"><span class="fa fa-lock"></span></span>
+                            <h3>사업영역1</h3>
+                            <p>이런 저런 사업</p>
+                            <a href="#" class="button button-style1">Read More</a>
+                        </section>
+                        <section class="4u">
+                            <span class="pennant"><span class="fa fa-globe"></span></span>
+                            <h3>사업영역1</h3>
+                            <p>이런 저런 사업</p>
+                            <a href="#" class="button button-style1">Read More</a>
+                        </section>
+    
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Main -->
+            <div id="main">
+                <div id="content" class="container">    
+                    <div class="row">
+                        <section class="6u">
+                            <a href="#" class="image full"><img src="{% static "./frontend/images/pic01.jpg" %}" alt=""></a>
+                            <header>
+                                <h2>소개</h2>
+                            </header>
+                            <p>이러저런 소개</p>
+                        </section>				
+                        <section class="6u">
+                            <a href="#" class="image full"><img src="{% static "./frontend/images/pic02.jpg" %}" alt=""></a>
+                            <header>
+                                <h2>소개</h2>
+                            </header>
+                            <p>이러저런 소개</p>
+                        </section>				
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Tweet -->
+            <div id="tweet">
+                <div class="container">
+                    <section>
+                        <blockquote>&ldquo;간단한 회사 이념 혹은 인용구&rdquo;</blockquote>
+                    </section>
+                </div>
+            </div>
+    
+        <!-- Footer -->
+            <div id="footer">
+                <div class="container">
+                    <section>
+                        <header>
+                            <h2>Contact Us</h2>
+                            <span class="byline">문의사항 있으면 연락바랍니다.</span>
+                        </header>
+                        <ul class="contact">
+                            <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+                            <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+    
+        <!-- Copyright -->
+            <div id="copyright">
+                <div class="container">
+                    Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+                </div>
+            </div>
+    
+    <link rel="stylesheet" href="{% static "./frontend/css/skel-noscript.css" %}"/>
+    <link rel="stylesheet" href="{% static "./frontend/css/style.css" %}"/>
+    <link rel="stylesheet" href="{% static "./frontend/css/style-desktop.css" %}"/>
+    <script src="{% static "./frontend/js/skel.min.js" %}"></script>
+    <script src="{% static "./frontend/js/skel-panels.min.js" %}"></script>
+    <script src="{% static "./frontend/js/init.js" %}"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>

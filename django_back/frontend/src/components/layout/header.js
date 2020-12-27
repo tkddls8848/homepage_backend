@@ -3,17 +3,18 @@ import React, {Component} from 'react'
 export class Header extends Component {
     render(){
         return(
-            <nav className="navbar navbar-expand-sm navbar-light bg-light">
-            <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a className="navbar-brand" href="#">Django + React</a>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                </div>
-            </div>
-            </nav> 
+    <div id="header">
+        <div id="nav-wrapper"> 
+            <nav id="nav">
+                <ul>
+                    <li className="active"><a href="index.html">Homepage</a></li>
+                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
         )
     }
 }
