@@ -13,7 +13,7 @@ import store from '../store'
 
 //Alert Options
 const alertOptions = {
-    time : 300,
+    timeout : 2000,
     position : 'top center'
 }
 
